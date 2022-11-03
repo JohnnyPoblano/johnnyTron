@@ -75,13 +75,13 @@ class EmptyClass:
 
 # Pixel Parameters 
 imagecell = EmptyClass()
-imagecell.pixel = 6                       # the size of our pixels.  Keep at 30 um or larger
-imagecell.pixelspacing = 2.0          # small gap between pixels to avoid litho errors. keep at 2.0
-imagecell.minsize = 4                    # min length of the pixel. keep at 4.0 or larger
+imagecell.pixel = 6                  # the size of our pixels.  Keep at 30 um or larger
+imagecell.pixelspacing = 2.0         # small gap between pixels to avoid litho errors. keep at 2.0
+imagecell.minsize = 4                # min length of the pixel. keep at 4.0 or larger
 imagecell.framewidth= 100            # frame to draw around image, makes it easier to recignize
 imagecell.framespace = 20
-imagecell.grating = EmptyClass()    # pixels can be squares or gratings
-imagecell.grating.pitch = 8            # with wet etching, advise not to use gratings
+imagecell.grating = EmptyClass()     # pixels can be squares or gratings
+imagecell.grating.pitch = 8          # with wet etching, advise not to use gratings
 imagecell.grating.width = 6
 imagecell.grating.omit = True        # gratings? T of F. for our process, better to omit
 imagecell.maxwidth  = 850            # image will be rescaled to fit this box
